@@ -1,0 +1,62 @@
+
+.redborder
+{
+    border: 1px solid rgba(155, 28, 28, 0.726);
+    height: 20px;
+    font-size: 12px;
+    box-shadow: 8px 8px 8px rgba(255, 5, 5, 0.527) inset;
+}
+
+
+.inputs
+{
+    height: 20px;
+    border: 1px solid rgba(214, 126, 218, 0.822);
+    font-size: 12px;
+    box-shadow: 8px 8px 8px rgba(201, 113, 193, 0.603) inset;
+    
+}
+
+.size
+{
+    height: 200px;
+    width: 500px;
+}
+
+.lbl
+{
+    font-size: 10px;
+    color: rgb(167, 18, 18);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.logBtn
+{
+    background-image: linear-gradient(to bottom right, rgba(194, 211, 37, 0.397), rgba(240, 219, 30, 0.507), rgb(161, 185, 24),rgba(71, 151, 39, 0.507));
+    border: 1px solid rgba(180, 166, 36, 0.603) ;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition:border 2s,transform 1s;
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+@keyframes example
+{
+    from {background-color: rgba(112, 22, 105, 0.363);}
+    to {background-color: rgba(185, 98, 159, 0.384);}
+}
+
+.logBtn:hover
+{
+border: 1px solid rgba(14, 156, 149, 0.438);
+transform: rotate(360deg);
+}
+
+.navbar-fixed-top
+{
+    position: fixed;
+}
+
