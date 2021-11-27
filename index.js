@@ -79,3 +79,21 @@ function clearPwd()
 {
     document.getElementById("lblPwd").innerText="";
 }
+
+function showPwd()
+ {
+    let chkShow=document.getElementById("chkShow");
+    let pwd=document.getElementById("pwd");   
+    console.log(chkShow.checked);   
+
+  if (chkShow.checked) 
+  {
+    pwd.type = "text";
+
+  } 
+  else
+   {
+    pwd.type = "password";
+    
+  }
+} 
