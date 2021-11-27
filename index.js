@@ -69,3 +69,13 @@ document.getElementById("lblPwd").innerText="Invalid Password";
 return false;
 }
 }
+
+function clearUser()
+{
+    document.getElementById("lblUser").innerText="";
+}
+
+function clearPwd()
+{
+    document.getElementById("lblPwd").innerText="";
+}

@@ -2,9 +2,11 @@
 .redborder
 {
     border: 1px solid rgba(155, 28, 28, 0.726);
-    height: 20px;
-    font-size: 12px;
+    height: 30px;
+    font-size: 14px;
     box-shadow: 8px 8px 8px rgba(255, 5, 5, 0.527) inset;
+    width: 200px;
+    border-radius: 5px;
 }
 
 
@@ -13,7 +15,8 @@
     height: 30px;
     border: 1px solid rgba(214, 126, 218, 0.822);
     font-size: 14px;
-    box-shadow: 8px 8px 8px rgba(201, 113, 193, 0.603) inset;
+    box-shadow: 8px 8px 8px rgba(189, 148, 72, 0.603) inset;
+    width: 50px;
     
 }
 
@@ -25,23 +28,28 @@
 
 .lbl
 {
-    font-size: 14px;
-    color: rgb(167, 18, 18);
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(243, 7, 7);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 .logBtn
 {
-    background-image: linear-gradient(to bottom right, rgba(194, 211, 37, 0.397), rgba(240, 219, 30, 0.507), rgb(161, 185, 24),rgba(71, 151, 39, 0.507));
-    border: 1px solid rgba(180, 166, 36, 0.603) ;
+    background-image: linear-gradient(to bottom right, rgba(37, 211, 211, 0.397), rgba(25, 219, 206, 0.822), rgb(184, 202, 17),rgba(38, 226, 138, 0.507));
+    border: 1px solid rgba(11, 182, 159, 0.603) ;
     font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition:border 2s,transform 1s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition:transform 1s;
     animation-name: example;
     animation-duration: 4s;
-
+    border-radius: 5px;
+    width: 80px;
+    color: rgb(73, 51, 2);
+    
 }
+
 
 @keyframes example
 {
@@ -51,12 +59,19 @@
 
 .logBtn:hover
 {
-border: 1px solid rgba(14, 156, 149, 0.438);
-transform: rotate(360deg);
+    box-shadow:2px 2px 3px rgb(135, 189, 10);
+    transition: box-shadow .5s ease-in-out;
+    animation: rotate 0.5s ease-in-out both;
+
+
+}
+@keyframes rotate{
+    0%{ transform: rotate(0deg); }
+    20%{ transform: rotate(3deg); }
+    50%{ transform: rotate(-5deg); }
+    70%{ transform: rotate(3deg); }
+    100%{ transform: rotate(0deg); }
 }
 
-.navbar-fixed-top
-{
-    position: fixed;
-}
+
 

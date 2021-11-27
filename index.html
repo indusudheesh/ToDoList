@@ -15,35 +15,35 @@
     <script src="https://kit.fontawesome.com/516210eb85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="style.css">
   </head>
-<body background="background.jpg" style="background-size: cover;">
+<body background="background.jpg" style="background-size:cover;">
     
 <!--login form-->
-<div class="container-sm mt-5 d-flex justify-content-end">
-    <div class="card mb-2" style="background-color: rgba(169, 169, 169, 0); height: 400px; width: 550px;" >
+<div class="container-sm mt-5 pt-5 d-flex justify-content-end">
+    <div class="card mb-2 " style="background-color: rgba(48, 54, 39, 0.274); height: 350px; width: 500px;" >
 
         <div class="row g-0">
 
           <div class="col-sm-5" style="background-blend-mode: overlay;">
-            <img src="login.jpg" class="img-fluid rounded mx-auto d-block" style="height:400px; width: 100%;" alt="cant find image">
+            <img src="login.jpg" class="img-fluid rounded mx-auto d-block" style="height:350px; width: 100%;" alt="cant find image">
           </div>
 
           <div class="col-sm-7" >
-            <div class="card-body" style="background-color: rgba(12, 5, 5, 0.459); height:400px; width: 100%;">
-              <h5 class="card-title">Login to ToDo</h5>
+            <div class="card-body" style="background-color: rgba(40, 46, 32, 0.425); height: 350px; width: 500px; height:350px; width: 100%;">
+              <h5 class="card-title pt-5" style="text-align: center;color: rgb(9, 243, 192); font-size: 22px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login to ToDo</h5>
               <form action="toDo.html" onsubmit="return validate()">
 
-                <div class="input-group flex-nowrap">
+                <div class="input-group flex-nowrap pt-3">
                     <span class="input-group-text inputs" id="addon-wrapping"> <i class="fas fa-user"></i></span>
-                    <input type="text" id="txtUsername" class="form-control-s inputs" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="text" oninput="clearUser()" id="txtUsername" class="form-control inputs" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
                   </div>
                   
-                  <div class="input-group flex-nowrap mb-2">
+                  <div class="input-group flex-nowrap mb-4">
                     <label id="lblUser" class="lbl"></label>
                   </div>
 
                   <div class="input-group flex-nowrap">
                     <span class="input-group-text inputs" id="addon-wrapping"><i class="fas fa-key"></i></span>
-                    <input type="password" id="pwd" class="form-control-s inputs" placeholder="**********" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="password" oninput="clearPwd()" id="pwd" class="form-control inputs" placeholder="**********" aria-label="Username" aria-describedby="addon-wrapping">
                   </div>
 
                   <div class="input-group flex-nowrap mb-1">
@@ -53,12 +53,12 @@
 
                   <div class="">
                     <input type="checkbox">
-                    <label class="form-check-label" style="font-size: 12px; color: darkblue; font-style: italic;" for="flexCheckDefault">
+                    <label class="form-check-label" style="font-size: 20px; color: rgb(15, 1, 24); font-style: italic; font-weight:600;" for="flexCheckDefault">
                       Show Password
                     </label>
                   </div>
 
-                  <div class="d-grid d-md-flex justify-content-md-end">
+                  <div class="d-grid d-md-flex justify-content-md-center pt-3">
                     <input class="form-control-s logBtn" type="submit" value="Log In">
                     
                   </div>
@@ -77,6 +77,6 @@
 </div>
 <!--/loginform-->
 
-<script src="jscode/index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
