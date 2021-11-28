@@ -1,4 +1,6 @@
-var xhttp=new XMLHttpRequest();
+function main()
+{
+    var xhttp=new XMLHttpRequest();
 xhttp.onreadystatechange=function()
 {
     if(this.readyState==4 && this.status==200)
@@ -29,12 +31,13 @@ xhttp.onreadystatechange=function()
         str=str+`</table>`;
         
         document.getElementById("list1").innerHTML=str;
+        document.getElementById("work").hidden=false;
     }
 }
 
 xhttp.open('GET','https://jsonplaceholder.typicode.com/todos',true);
 xhttp.send();
-
+}
 var count=0;
 
 function chkChange(item)

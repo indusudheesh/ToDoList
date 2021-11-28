@@ -10,12 +10,13 @@
 }
 
 
+
 .inputs
 {
     height: 30px;
     border: 1px solid rgba(214, 126, 218, 0.822);
     font-size: 14px;
-    box-shadow: 8px 8px 8px rgba(189, 148, 72, 0.603) inset;
+    box-shadow: 8px 8px 8px rgba(102, 12, 67, 0.603) inset;
     width: 50px;
     
 }
@@ -35,31 +36,28 @@
 
 }
 
+
+
 .logBtn
 {
-    background-image: linear-gradient(to bottom right, rgba(37, 211, 211, 0.397), rgba(25, 219, 206, 0.822), rgb(184, 202, 17),rgba(38, 226, 138, 0.507));
+    background-image: linear-gradient(to bottom right, rgba(2, 15, 15, 0.692), rgba(64, 1, 78, 0.863), rgba(68, 7, 65, 0.904),rgba(2, 61, 35, 0.705));
     border: 1px solid rgba(11, 182, 159, 0.603) ;
     font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition:transform 1s;
-    animation-name: example;
-    animation-duration: 4s;
     border-radius: 5px;
     width: 80px;
-    color: rgb(73, 51, 2);
+    color: rgb(4, 141, 118);
+    box-shadow:2px 2px 3px rgba(230, 5, 230, 0.479);
     
 }
 
 
-@keyframes example
-{
-    from {background-color: rgba(112, 22, 105, 0.363);}
-    to {background-color: rgba(185, 98, 159, 0.384);}
-}
+
 
 .logBtn:hover
 {
-    box-shadow:2px 2px 3px rgb(135, 189, 10);
+    
     transition: box-shadow .5s ease-in-out;
     animation: rotate 0.5s ease-in-out both;
 
@@ -71,7 +69,38 @@
     50%{ transform: rotate(-5deg); }
     70%{ transform: rotate(3deg); }
     100%{ transform: rotate(0deg); }
+
+    
 }
 
+
+h5
+{
+    text-align: center;color: rgb(106, 1, 116); 
+    font-size: 22px; 
+    font-weight: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation:example 4s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes example
+{
+    from {
+        transform: rotate(0) translateX(0);
+        opacity: 1;
+    }
+    50%, 60% {
+        transform: rotate(90deg) translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(90deg) translateX(200px);
+        opacity: 0;
+    }
+
+    
+    from {color: rgb(184, 6, 154);}
+    to {color: rgb(121, 3, 105);}
+}
 
 

@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" onclick="show()">
+          <a class="navbar-brand" href="#" onclick="main()">
             <img src="to-do-list.png" alt="" width="30" height="36" class="d-inline-block align-text-top">
             <button class="decor">To Dos</button>
           </a>
@@ -28,10 +28,15 @@
           </a>
         </div>
       </nav>
-    <div class="container mt-3 p-5" hidden id="tbl" >
+    <div class="container mt-3 p-5" id="tbl" >
         <div class="">
-          <p> Take a look at your work! </p>
-          <div class="" id="list1" style="height: 38rem;overflow-y: auto;"> 
+          <p id="work" hidden> Take a look at your work! </p>
+          <div class="" id="list1" style="height: 38rem;overflow-y: auto;" > 
+            <p class="mt-5 pt-5 " id="inl">Organize it All 
+              Achieve peace of mind with TODO</p>
+            
+              <img src="toDo.jpg" alt="" style="height: 400px; width:500px;" class="mt-5 pt-2">
+              
             
           </div>          
         </div>

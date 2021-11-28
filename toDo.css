@@ -108,7 +108,7 @@ tr:hover
     100%{ transform: rotate(0deg); }
 }
 
-p
+#work
 {
    position: relative;
     animation: textColor 5s ease-in-out  infinite, textAnm 3s ease-in-out 1,bounce 3s ease-in-out infinite alternate-reverse;
@@ -147,3 +147,27 @@ p
 {
     background-color: #32616485;
 }
+
+#inl
+{
+    font-size: 28px;
+    font-weight: 700;
+    color: brown;
+    animation:head 3s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes head{
+    from{color: rgb(248, 128, 48);}
+    to {color:rgb(41, 41, 241)}
+}
+ .tooltiptext {
+    
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    
+    z-index: 2;
+   
+  }
